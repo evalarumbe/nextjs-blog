@@ -26,7 +26,7 @@ export default function Post({ postData }) {
 
 // Runs once. Calls getStaticProps (therefore also Post) for each item in paths
 export async function getStaticPaths() {
-  const paths = getAllPostIds() // array of objects, each with a with params key
+  const paths = getAllPostIds() // array of context objects, each with a with params key
 
   // return an array of possible values for [id]
   return {
@@ -35,7 +35,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params }) { // params property from one object
+export async function getStaticProps({ params }) { // params property from a context object
   const postData = await getPostData(params.id)
 
   return {
