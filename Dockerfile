@@ -1,5 +1,3 @@
-# Thanks, this person: https://medium.com/swlh/dockerize-your-next-js-application-91ade32baa6
-
 # base image
 FROM node:fermium
 
