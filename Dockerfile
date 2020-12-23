@@ -20,7 +20,6 @@ RUN npm run build
 # Used 3000 because it's the Next.js default.
 # This worked with: $ docker run -p 8080:3000 --name hello -d hello-world
 # On host machine, browse to localhost:8080
-
 ENV PORT 3000
 EXPOSE $PORT
 
